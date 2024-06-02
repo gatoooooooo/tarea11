@@ -110,8 +110,7 @@ WHERE p.Ubicacion = 'CHICAGO' AND (e.Salario + COALESCE(e.Comision, 0)) > 2000;
 
 **14**)¿Cuáles son los empleados que tienen un jefe, están asignados a más de un proyecto, y han trabajado más de 15 horas en total en todos los proyectos combinados?
 
-> 
-SELECT e.IDEmpleado, e.NombreEmpleado
+> SELECT e.IDEmpleado, e.NombreEmpleado
 FROM Empleado e
 JOIN(
 SELECT IDEmpleado
@@ -124,8 +123,7 @@ WHERE e.IDJefe IS NOT NULL;
 
 **15**)¿Cuáles son los empleados que no reciben comisión y trabajan en departamentos ubicados en 'DALLAS' o 'NEW YORK'?
 
-> 
-SELECT E.IDEmpleado, E.NombreEmpleado, D.NombreDepartamento, D.Ubicacion
+> SELECT E.IDEmpleado, E.NombreEmpleado, D.NombreDepartamento, D.Ubicacion
 FROM Empleado E
 JOIN Departamento D ON E.IDDepartamento = D.IDDepartamento
 WHERE  E.Comision IS NULL AND (D.Ubicacion = 'NEW YORK' OR D.Ubicacion = 'DALLAS');
