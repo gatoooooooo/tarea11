@@ -1,10 +1,10 @@
 # TAREA 11
 ##### EJERCICIOS PROPUESTOS DE CONSULTAS
 **1**)¿Cuáles son los identificadores y nombres de todos los proyectos existentes en la empresa?
-
-`` SELECT IDProyecto,NombreProyecto
-FROm Proyecto;``
-
+```
+SELECT IDProyecto,NombreProyecto
+FROm Proyecto;
+```
 **2**)¿Cuáles son los proyectos que se desarrollan en 'CHICAGO'?
 
 > SELECT IDProyecto, NombreProyecto
