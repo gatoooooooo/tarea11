@@ -2,7 +2,7 @@
 ##### EJERCICIOS PROPUESTOS DE CONSULTAS
 **1**)¿Cuáles son los identificadores y nombres de todos los proyectos existentes en la empresa?
 
-> SELECT IDProyecto,NombreProyecto
+'''SELECT IDProyecto,NombreProyecto
 FROm Proyecto;
 
 **2**)¿Cuáles son los proyectos que se desarrollan en 'CHICAGO'?
